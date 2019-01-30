@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Treatwell Task | Giulia Gandolfo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-light bg-light">
+		<span class="navbar-brand mb-0 h1">Treatwell Task | Giulia Gandolfo</span>
+	</nav>
+	<div class="alerts_container"></div>
+	<div class="container-fluid">
+		Enter a width and height to draw a shape:
+		<div class="mb-3">
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text" id="width-label">Width</span>
+				</div>
+				<input id="width-input" type="number" placeholder="4" min="2" aria-label="Width" aria-describedby="width-label">
+			</div>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text" id="height-label">Height</span>
+				</div>
+				<input id="height-input" type="number" placeholder="4" min="2" aria-label="Height" aria-describedby="height-label">
+			</div>
+			<div>
+				<button type="button" class="btn btn-outline-primary" id="draw" onclick="handleDrawClick()">Draw</button>
+			</div>
+			<pre id="shape-draw-area" class="text-monospace">
+			</pre>
+	</div>
+
+	<script src="shapes.js"></script>
+</body>
+</html>
